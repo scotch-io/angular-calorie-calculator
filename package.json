@@ -1,0 +1,21 @@
+{
+  "name": "angular-calorie-calculator",
+  "version": "0.0.0",
+  "description": "angular-calorie-calculator\r ==========================",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scotch-io/angular-calorie-calculator"
+  },
+  "author": "Chris Sevilleja",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/scotch-io/angular-calorie-calculator/issues"
+  },
+  "dependencies": {
+    "express": "~4.10.1"
+  }
+}
