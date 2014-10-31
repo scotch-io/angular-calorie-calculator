@@ -17,14 +17,69 @@
 </head>
 <body class="container" ng-app="calcApp" ng-controller="mainController">
 
+<pre><code>{{ shitty }}</code></pre>
+
+<form>
 <div class="row">
-	<div class="col-sm-6">
-		
-	</div>
-	<div class="col-sm-6">
-		
-	</div>
+<div class="col-sm-6">
+	
+	<h2>Activity Level</h2>
+
+	<div class="btn-group">
+		<label class="btn btn-primary" ng-model="activityType" btn-radio="'sedentary'">Sedentary</label>
+		<label class="btn btn-primary" ng-model="activityType" btn-radio="'Active'">Active</label>
+		<label class="btn btn-primary" ng-model="activityType" btn-radio="'athlete'">Athlete</label>
+	</div>	
+
+	<img src="http://media-cache-ec0.pinimg.com/736x/d7/6b/ea/d76bead82b58b4391868fb33bb47ca23.jpg" class="img-responsive">
+
 </div>
+<div class="col-sm-6">
+	
+	<h2>Info</h2>
+
+	<div class="form-group">
+		<h3>Age</h3>
+		<input type="text" class="form-control" ng-model="info.age" ng-blur="doTheThing(info.age)">
+	</div>
+
+	<div class="form-group">
+		<h3>Gender</h3>
+		<div class="form-group">
+			<div class="btn-group">
+				<label class="btn btn-primary" ng-model="info.gender" btn-radio="'male'">Male</label>
+				<label class="btn btn-primary" ng-model="info.gender" btn-radio="'female'">Female</label>
+			</div>	
+		</div>
+	</div>
+
+	<div class="form-group">
+		<h3>Height</h3>
+
+		<div class="form-group">
+			<div class="btn-group">
+				<label class="btn btn-primary" ng-model="info.heightModifier" btn-radio="'ft'">Feet</label>
+				<label class="btn btn-primary" ng-model="info.heightModifier" btn-radio="'cm'">cm</label>
+			</div>	
+		</div>
+
+
+			<div class="form-group">
+				<label>Feet</label>
+				<input type="text" class="form-control" ng-model="info.height.feet">
+			</div>
+			<div class="form-group">
+				<label>Inches</label>
+				<input type="text" class="form-control" ng-model="info.height.inches">
+			</div>			
+
+
+
+	</div>
+
+</div>
+</div>
+</form>
 	
 </body>
 </html>

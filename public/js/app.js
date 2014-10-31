@@ -3,9 +3,20 @@ angular.module('calcApp', ['ui.bootstrap'])
 // main controller -------------------------------------------------------------
 .controller('mainController', function($scope) {
 
-	$scope.weightModifier = '';
 	$scope.heightModifier = '';
+	$scope.weightModifier = '';
 	$scope.activityType   = '';
+
+	$scope.info = {};
+	$scope.info.gender = 'male';
+
+	$scope.doTheThing = function(age) {
+
+		$scope.shitty = age.split(' ');
+
+		console.log($scope.shitty);
+
+	};
 
 })
 
